@@ -69,7 +69,7 @@ def main():
     print("\nDockerfile\n"+dockerfile)
     with open("./Dockerfile", "w") as f:
         f.write(dockerfile)
-    new_image_name = "redroid/redroid:"+"_".join(tags)
+    new_image_name = "corn"
     subprocess.run([args.container, "build", "-t", new_image_name, "."])
     helper.print_color("Successfully built {}".format(
         new_image_name), helper.bcolors.GREEN)
