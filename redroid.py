@@ -69,7 +69,7 @@ def main():
     print("\nDockerfile\n"+dockerfile)
     with open("./Dockerfile", "w") as f:
         f.write(dockerfile)
-    new_image_name = "corn"
+    new_image_name = "cym31152x/android"
     subprocess.run([args.container, "build", "-t", new_image_name, "."])
     helper.print_color("Successfully built {}".format(
         new_image_name), helper.bcolors.GREEN)
